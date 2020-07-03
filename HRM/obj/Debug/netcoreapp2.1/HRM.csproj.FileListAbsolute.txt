@@ -1,0 +1,16 @@
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.csprojAssemblyReference.cache
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.RazorAssemblyInfo.cache
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.RazorAssemblyInfo.cs
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.AssemblyInfoInputs.cache
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.AssemblyInfo.cs
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\appsettings.Development.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\appsettings.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\HRM.deps.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\HRM.runtimeconfig.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\HRM.runtimeconfig.dev.json
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\HRM.dll
+F:\FoysalWahid@Team01\RMGERP\HRM\bin\Debug\netcoreapp2.1\HRM.pdb
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.RazorTargetAssemblyInfo.cache
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.dll
+F:\FoysalWahid@Team01\RMGERP\HRM\obj\Debug\netcoreapp2.1\HRM.pdb
