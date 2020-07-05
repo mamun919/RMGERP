@@ -9,11 +9,12 @@ using HRM.Data.Entity.Master;
 
 namespace HRM.Data.Entity.Employee
 {
-    [Table("TraningLog", Schema = "HR")]
-    public class TraningLog 
+    [Table("TrainingLog", Schema = "HR")]
+    public class TrainingLog 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         [DataType(DataType.Date)]

@@ -10,17 +10,17 @@ namespace HRM.Data.Entity.Employee
     [Table("EmployeeProjectActivity", Schema = "HR")]
     public class EmployeeProjectActivity
     {
-        public int? employeeId { get; set; }
+        public int id { get; set; }
+
+        public int? employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
-        public int? hRProjectId { get; set; }
-        public HRProject hRProject { get; set; }
 
-        public int? hRDonerId { get; set; }
-        public HRDoner hRDoner { get; set; }
+        //public int? hRDonerId { get; set; }
+        //public HrDoner hRDoner { get; set; }
 
-        public int? hRActivityId { get; set; }
-        public HRActivity hRActivity { get; set; }
+        //public int? hRActivityId { get; set; }
+        //public HrActivity hRActivity { get; set; }
 
         public int? isActive { get; set; }
     }

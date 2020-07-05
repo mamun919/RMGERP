@@ -7,8 +7,9 @@ namespace HRM.Data.Entity.Employee
     [Table("EmployeeAward", Schema = "HR")]
     public class EmployeeAward 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string awardName { get; set; }

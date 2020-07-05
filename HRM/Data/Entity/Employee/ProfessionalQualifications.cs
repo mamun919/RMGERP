@@ -6,7 +6,9 @@ namespace HRM.Data.Entity.Employee
     [Table("ProfessionalQualifications", Schema = "HR")]
     public class ProfessionalQualifications
     {
-        public int employeeID { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public int? qualificationHeadId { get; set; }

@@ -4,6 +4,8 @@ namespace HRM.Data.Entity.Master
 {
     public class CompanyAddress
     {
+        public int id { get; set; }
+
         public int? addressTypeId { get; set; }
         public AddressType addressType { get; set; }
 

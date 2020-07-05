@@ -4,6 +4,8 @@ namespace HRM.Data.Entity.Master
 {
     public class Country 
     {
+        public int id { get; set; }
+
         [Required]
         public string countryCode { get; set; }
 

@@ -5,7 +5,9 @@ namespace HRM.Data.Entity.Employee
     [Table("Supervisor", Schema = "HR")]
     public class Supervisor 
     {
-        public int employeeID { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public int? supervisorId { get; set; }

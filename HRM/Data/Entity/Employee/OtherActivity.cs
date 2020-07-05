@@ -6,11 +6,12 @@ namespace HRM.Data.Entity.Employee
     [Table("OtherActivity", Schema = "HR")]
     public class OtherActivity
     {
-        public int employeeID { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
-        public int? activityNameId { get; set; }
-        public ActivityName activityName { get; set; }
+        public string activityName { get; set; }
 
         public string name { get; set; }
 

@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HRM.Data.Entity.Master
 {
-    [Table("SpecialBranchUnit", Schema = "HR")]
-    public class SpecialBranchUnit
+    [Table("BranchUnit", Schema = "HR")]
+    public class BranchUnit
     {
         public string branchUnitName { get; set; }
 
-        public string branchUnitNameBN { get; set; }
+        public string branchUnitNameBn { get; set; }
 
         public string branchCode { get; set; }
 

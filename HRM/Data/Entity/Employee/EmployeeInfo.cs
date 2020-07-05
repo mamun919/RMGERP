@@ -8,34 +8,36 @@ namespace HRM.Data.Entity.Employee
     [Table("EmployeeInfo", Schema = "HR")]
     public class EmployeeInfo 
     {
+        public int id { get; set; }
+
         [Required]
         [MaxLength(50)]
         public string employeeCode { get; set; }
 
         [MaxLength(100)]
-        public string nationalID { get; set; }
+        public string nationalId { get; set; }
 
         [MaxLength(100)]
         public string birthIdentificationNo { get; set; }
 
         [MaxLength(250)]
-        public string govtID { get; set; }
+        public string govtId { get; set; }
         
         public string gpfNomineeName { get; set; }
         
         public string gpfAcNo { get; set; }
 
-        public string nameEnglish { get; set; }
+        public string nameEn { get; set; }
 
-        public string nameBangla { get; set; }
+        public string nameBn { get; set; }
 
-        public string motherNameEnglish { get; set; }
+        public string motherNameEn { get; set; }
 
-        public string motherNameBangla { get; set; }
+        public string motherNameBn { get; set; }
 
-        public string fatherNameEnglish { get; set; }
+        public string fatherNameEn { get; set; }
 
-        public string fatherNameBangla { get; set; }
+        public string fatherNameBn { get; set; }
 
         public string nationality { get; set; }
 
@@ -55,16 +57,16 @@ namespace HRM.Data.Entity.Employee
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime? dateofregularity { get; set; }
+        public DateTime? dateOfRegularity { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? dateOfPermanent { get; set; }
         
-        public string  LPRDate{ get; set; } //calculative From Date of Birth
+        public string  lprDate{ get; set; } //calculative From Date of Birth
 
-        public string  PRLStartDate{ get; set; } //calculative From Date of Birth
-        public string  PRLEndDate{ get; set; } //calculative From Date of Birth
+        public string  prlStartDate{ get; set; } //calculative From Date of Birth
+        public string  prlEndDate{ get; set; } //calculative From Date of Birth
 
         public string gender { get; set; }
 
@@ -118,20 +120,17 @@ namespace HRM.Data.Entity.Employee
 
         public int? post { get; set; } // Related PostID But Not FK Referenced 
 
-        public int designationCheck { get; set; }//Current Charged Checked
+        public int designationCheck { get; set; } //Current Charged Checked
 
         public string joiningDesignation { get; set; }
         
         [MaxLength(100)]
-        public string natureOfRequitment { get; set; } // Direct Or Absorbed
+        public string natureOfReqruitment { get; set; } // Direct Or Absorbed
 
         public string homeDistrict { get; set; }
 
         public int? branchId { get; set; }
-        public SpecialBranchUnit branch { get; set; }
-
-        public int? pNSId { get; set; }
-        public PNS pNS { get; set; }
+        public BranchUnit branch { get; set; }
 
         //For Type Managing 
         [MaxLength(100)]

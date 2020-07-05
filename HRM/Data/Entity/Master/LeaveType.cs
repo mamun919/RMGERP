@@ -6,6 +6,8 @@ namespace HRM.Data.Entity.Master
     [Table("LeaveType", Schema = "HR")]
     public class LeaveType 
     {
+        public int id { get; set; }
+
         [Required]
         public string nameEn { get; set; }
         public string nameBn { get; set; }

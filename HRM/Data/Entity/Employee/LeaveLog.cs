@@ -8,8 +8,9 @@ namespace HRM.Data.Entity.Employee
     [Table("LeaveLog", Schema = "HR")]
     public class LeaveLog 
     {
-        //Foreign Relation -> Resource
-        public int? employeeId { get; set; }
+        public int id { get; set; }
+        
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public int? leaveTypeId { get; set; }
@@ -26,6 +27,6 @@ namespace HRM.Data.Entity.Employee
         public DateTime? leaveTo { get; set; }
 
         public string purposeOfLeave { get; set; }
-        public string Status { get; set; }
+        public string status { get; set; }
     }
 }

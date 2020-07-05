@@ -4,6 +4,8 @@ namespace HRM.Data.Entity.Master
 {
     public class Division 
     {
+        public int id { get; set; }
+
         [Required]
         public string divisionCode { get; set; }
 

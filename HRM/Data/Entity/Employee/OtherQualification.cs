@@ -10,7 +10,9 @@ namespace HRM.Data.Entity.Employee
     [Table("OtherQualification", Schema = "HR")]
     public class OtherQualification
     {
-        public int employeeID { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public int? otherQualificationHeadId { get; set; }

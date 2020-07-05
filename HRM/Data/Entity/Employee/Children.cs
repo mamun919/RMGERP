@@ -7,13 +7,14 @@ namespace HRM.Data.Entity.Employee
     [Table("Children", Schema = "HR")]
     public class Children 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string childName { get; set; }
 
-        public string childNameBN { get; set; }
+        public string childNameBn { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]

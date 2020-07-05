@@ -7,15 +7,16 @@ namespace HRM.Data.Entity.Employee
     [Table("Spouse", Schema = "HR")]
     public class Spouse
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string spouseName { get; set; }
 
         public string email { get; set; }
 
-        public string spouseNameBN { get; set; }
+        public string spouseNameBn { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]

@@ -4,7 +4,7 @@ namespace HRM.Data.Entity.Master
 {
     public class Thana 
     {
-       
+        public int id { get; set; }
         public string thanaCode { get; set; }
       
         public string thanaName { get; set; }

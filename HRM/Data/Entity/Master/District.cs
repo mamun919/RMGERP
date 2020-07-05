@@ -4,6 +4,8 @@ namespace HRM.Data.Entity.Master
 {
     public class District 
     {
+        public int id { get; set; }
+
         [Required]
         public string districtCode { get; set; }
 

@@ -7,8 +7,9 @@ namespace HRM.Data.Entity.Employee
     [Table("DrivingLicense", Schema = "HR")]
     public class DrivingLicense 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string licenseNumber { get; set; }
@@ -23,6 +24,6 @@ namespace HRM.Data.Entity.Employee
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime? dateOfExpair { get; set; }
+        public DateTime? dateOfExpire { get; set; }
     }
 }

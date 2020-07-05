@@ -3,11 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HRM.Data.Entity.Master
 {
-    [Table("LevelofEducation", Schema = "HR")]
-    public class LevelofEducation
+    [Table("LevelOfEducation", Schema = "HR")]
+    public class LevelOfEducation
     {
+        public int id { get; set; }
+
         [Required]
-        public string levelofeducationName { get; set; }
-        public string levelofeducationNameBn { get; set; }
+        public string levelOfEducationName { get; set; }
+        public string levelOfEducationNameBn { get; set; }
     }
 }

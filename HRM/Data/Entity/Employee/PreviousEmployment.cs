@@ -4,14 +4,14 @@ using HRM.Data.Entity.Master;
 
 namespace HRM.Data.Entity.Employee
 {
-    [Table("PriviousEmployment", Schema = "HR")]
-    public class PriviousEmployment
+    [Table("PreviousEmployment", Schema = "HR")]
+    public class PreviousEmployment
     {
-        public int employeeID { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
-        public int? organizationTypeId { get; set; }
-        public HRPMSOrganizationType organizationType { get; set; }
 
         public string companyName { get; set; }
 

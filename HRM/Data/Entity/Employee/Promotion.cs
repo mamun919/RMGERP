@@ -3,15 +3,13 @@ using HRM.Data.Entity.Master;
 
 namespace HRM.Data.Entity.Employee
 {
-    /*
-        status: Not used by apllication
-        Verified By:  Jaggesher
-        Date: 23/04/2019
-    */
+    
     [Table("Promotion", Schema = "HR")]
     public class Promotion
     {
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
 
         public EmployeeInfo employeeInfo { get; set; }
 
@@ -25,8 +23,8 @@ namespace HRM.Data.Entity.Employee
         public int? salaryGradeId { get; set; }
         public SalaryGrade salaryGrade { get; set; }
 
-        public decimal? Basic { get; set; }
+        public decimal? basic { get; set; }
 
-        public string Remarks { get; set; }
+        public string remarks { get; set; }
     }
 }

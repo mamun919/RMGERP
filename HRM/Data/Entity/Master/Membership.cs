@@ -6,6 +6,8 @@ namespace HRM.Data.Entity.Master
     [Table("Membership", Schema = "HR")]
     public class Membership
     {
+        public int id { get; set; }
+
         [Required]
         public string membershipName { get; set; }
         public string membershipNameBn { get; set; }

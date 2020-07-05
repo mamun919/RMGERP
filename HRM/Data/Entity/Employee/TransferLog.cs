@@ -8,8 +8,9 @@ namespace HRM.Data.Entity.Employee
     [Table("TransferLog", Schema = "HR")]
     public class TransferLog 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string workStation { get; set; }
@@ -22,10 +23,8 @@ namespace HRM.Data.Entity.Employee
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? to { get; set; }
 
-        public string designation { get; set; }
-        
-        public int? designatioId { get; set; }
-        public Designation designatio { get; set; }
+        public int? designationId { get; set; }
+        public Designation designation { get; set; }
 
         public int? departmentId { get; set; }
         public Department department { get; set; }

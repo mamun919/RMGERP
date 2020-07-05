@@ -7,8 +7,9 @@ namespace HRM.Data.Entity.Employee
     [Table("EmployeeLanguage", Schema = "HR")]
     public class EmployeeLanguage 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         [MaxLength(50)]

@@ -9,9 +9,9 @@ namespace HRM.Data.Entity.Master
     [Table("CourseTitle", Schema = "HR")]
     public class CourseTitle 
     {
-        public string nameEN { get; set; }
+        public string nameEn { get; set; }
 
-        public string nameBN { get; set; }
+        public string nameBn { get; set; }
 
         public string remarks { get; set; }
     }

@@ -5,6 +5,7 @@ namespace HRM.Data.Entity.Master
 {
     public class Company
     {
+        public int id { get; set; }
         [MaxLength(250)]
         public string companyName { get; set; }
         [MaxLength(250)]
@@ -28,12 +29,14 @@ namespace HRM.Data.Entity.Master
         [MaxLength(150)]
         public string companyEmail { get; set; }
         [MaxLength(150)]
-        public string alternetEmail { get; set; }
+        public string alternateEmail { get; set; }
 
         public decimal? liquidityRatio { get; set; }
         [MaxLength(250)]
         public string fileName { get; set; }
         [MaxLength(500)]
         public string filePath { get; set; }
+
+        public string logoUrl { get; set; }
     }
 }

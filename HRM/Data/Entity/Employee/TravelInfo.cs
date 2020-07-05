@@ -6,11 +6,12 @@ using HRM.Data.Entity.Master;
 
 namespace HRM.Data.Entity.Employee
 {
-    [Table("TraveInfo", Schema = "HR")]
-    public class TraveInfo 
+    [Table("TravelInfo", Schema = "HR")]
+    public class TravelInfo 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public int? travelPurposeId { get; set; }

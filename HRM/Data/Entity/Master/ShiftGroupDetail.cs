@@ -5,7 +5,9 @@ namespace HRM.Data.Entity.Master
 {
     [Table("ShiftGroupDetail", Schema = "HR")]
     public class ShiftGroupDetail 
-    {   
+    {
+        public int id { get; set; }
+
         [Required]
         public string weekDay { get; set; }
         [Required]

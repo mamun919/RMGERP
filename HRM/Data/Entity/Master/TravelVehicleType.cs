@@ -9,6 +9,8 @@ namespace HRM.Data.Entity.Master
     [Table("TravelVehicleType", Schema = "HR")]
     public class TravelVehicleType
     {
+        public int id { get; set; }
+
         public string name { get; set; }
     }
 }

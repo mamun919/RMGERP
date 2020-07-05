@@ -6,8 +6,9 @@ namespace HRM.Data.Entity.Employee
     [Table("EducationalQualification", Schema = "HR")]
     public class EducationalQualification 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string institution { get; set; }
@@ -23,12 +24,9 @@ namespace HRM.Data.Entity.Employee
 
         public int? degreeId { get; set; }
         public Degree degree { get; set; }
-
-        public int? organizationId { get; set; }
-        public Organization organization { get; set; }
-
-        public int? reldegreesubjectId { get; set; }
-        public RelDegreeSubject reldegreesubject { get; set; }
+        
+        public int? relDegreeSubjectId { get; set; }
+        public RelDegreeSubject relDegreeSubject { get; set; }
 
     }
 }

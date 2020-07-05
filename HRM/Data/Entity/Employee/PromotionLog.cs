@@ -8,8 +8,9 @@ namespace HRM.Data.Entity.Employee
     [Table("PromotionLog", Schema = "HR")]
     public class PromotionLog 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         public string designation { get; set; }

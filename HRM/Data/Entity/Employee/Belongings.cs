@@ -8,14 +8,16 @@ namespace HRM.Data.Entity.Employee
     [Table("Belongings", Schema = "HR")]
     public class Belongings
     {
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
+
         [MaxLength(70)]
         public string assetNo { get; set; }
 
-        public int employeeId { get; set; }
-        public EmployeeInfo employee { get; set; }
+        public string itemName { get; set; }
 
-        public int? itemSpecificationId { get; set; }
-        public ItemSpecification itemSpecification { get; set; }
+        public string itemSpecification { get; set; }
 
         [MaxLength(400)]
         public string description { get; set; }

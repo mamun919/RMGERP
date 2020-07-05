@@ -6,6 +6,8 @@ namespace HRM.Data.Entity.Master
     [Table("TrainingInstitute", Schema = "HR")]
     public class TrainingInstitute
     {
+        public int id { get; set; }
+
         [Required]
         public string trainingInstituteName { get; set; }
         public string trainingInstituteNameBn { get; set; }

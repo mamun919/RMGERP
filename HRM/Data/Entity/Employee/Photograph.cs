@@ -6,8 +6,9 @@ namespace HRM.Data.Entity.Employee
     [Table("Photograph", Schema = "HR")]
     public class Photograph 
     {
-        //Foreign Relation
-        public int employeeId { get; set; }
+        public int id { get; set; }
+
+        public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
         [Required]
