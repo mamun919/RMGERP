@@ -4,10 +4,8 @@ using HRM.Data.Entity.Master;
 namespace HRM.Data.Entity.Employee
 {
     [Table("NomineeDetail", Schema = "HR")]
-    public class NomineeDetail
+    public class NomineeDetail:Base
     {
-        public int id { get; set; }
-
         public int? nomineeId { get; set; }
         public Nominee nominee { get; set; }
 

@@ -4,19 +4,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HRM.Data.Entity.Employee
 {
     [Table("Photograph", Schema = "HR")]
-    public class Photograph 
+    public class Photograph : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
-        [Required]
+        [Required, MaxLength(200)]
         public string url { get; set; }
 
-        public string remarks { get; set; }
-
-        [Required]
+        [Required, MaxLength(50)]
         public string type { get; set; }
 
     }

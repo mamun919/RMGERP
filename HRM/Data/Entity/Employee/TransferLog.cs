@@ -6,13 +6,12 @@ using HRM.Data.Entity.Master;
 namespace HRM.Data.Entity.Employee
 {
     [Table("TransferLog", Schema = "HR")]
-    public class TransferLog 
+    public class TransferLog : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
+        [MaxLength(100)]
         public string workStation { get; set; }
 
         [DataType(DataType.Date)]

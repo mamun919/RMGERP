@@ -5,15 +5,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HRM.Data.Entity.Employee
 {
     [Table("PassportDetails", Schema = "HR")]
-    public class PassportDetails 
+    public class PassportDetails : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
+        [MaxLength(100)]
         public string passportNumber { get; set; }
 
+        [MaxLength(100)]
         public string placeOfIssue { get; set; }
 
         [DataType(DataType.Date)]

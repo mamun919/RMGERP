@@ -5,10 +5,8 @@ using HRM.Data.Entity.Master;
 namespace HRM.Data.Entity.Employee
 {
     [Table("EmployeeLanguage", Schema = "HR")]
-    public class EmployeeLanguage 
+    public class EmployeeLanguage : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 

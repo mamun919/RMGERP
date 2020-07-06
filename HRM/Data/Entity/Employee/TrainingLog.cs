@@ -10,10 +10,8 @@ using HRM.Data.Entity.Master;
 namespace HRM.Data.Entity.Employee
 {
     [Table("TrainingLog", Schema = "HR")]
-    public class TrainingLog 
+    public class TrainingLog : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
@@ -34,10 +32,10 @@ namespace HRM.Data.Entity.Employee
         public int? trainingInstituteId { get; set; }
         public TrainingInstitute trainingInstitute { get; set; }
 
-        public string remarks { get; set; }
-
+        [MaxLength(100)]
         public string trainingTitle { get; set; }
 
+        [MaxLength(100)]
         public string sponsoringAgency { get; set; }
 
     }
