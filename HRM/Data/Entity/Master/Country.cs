@@ -1,20 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
-    public class Country 
+    public class Country : Base
     {
-        public int id { get; set; }
-
-        [Required]
+        [Required, MaxLength(50)]
         public string countryCode { get; set; }
 
-        [Required]
+        [Required, MaxLength(50)]
         public string countryName { get; set; }
+
+        [MaxLength(50)]
         public string countryNameBn { get; set; }
 
-        
+        [MaxLength(50)]
         public string shortName { get; set; }
-
     }
 }

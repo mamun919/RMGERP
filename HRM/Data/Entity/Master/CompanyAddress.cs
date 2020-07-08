@@ -1,11 +1,11 @@
-﻿using HRM.Data.Entity.Master;
+﻿using System.ComponentModel.DataAnnotations;
+using HRM.Data.Entity.Employee;
+using HRM.Data.Entity.Master;
 
 namespace HRM.Data.Entity.Master
 {
-    public class CompanyAddress
+    public class CompanyAddress: Base
     {
-        public int id { get; set; }
-
         public int? addressTypeId { get; set; }
         public AddressType addressType { get; set; }
 
@@ -21,16 +21,22 @@ namespace HRM.Data.Entity.Master
         public int? thanaId { get; set; }
         public Thana thana { get; set; }
 
+        [MaxLength(50)]
         public string union { get; set; }
 
+        [MaxLength(50)]
         public string postOffice { get; set; }
 
+        [MaxLength(50)]
         public string postCode { get; set; }
 
+        [MaxLength(50)]
         public string blockSector { get; set; }
 
+        [MaxLength(100)]
         public string houseVillage { get; set; }
 
+        [MaxLength(20)]
         public string type { get; set; }  //Organization or Resourse
     }
 }

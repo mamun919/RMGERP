@@ -1,18 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
-    public class District 
+    public class District : Base
     {
-        public int id { get; set; }
-
-        [Required]
+        [Required, MaxLength(30)]
         public string districtCode { get; set; }
 
-        [Required]
+        [Required, MaxLength(30)]
         public string districtName { get; set; }
+        
+        [MaxLength(30)]
         public string districtNameBn { get; set; }
 
+        [MaxLength(30)]
         public string shortName { get; set; }
 
         public int divisionId { get; set; }

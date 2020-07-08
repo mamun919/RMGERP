@@ -5,10 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HRM.Data.Entity.Employee
 {
     [Table("AcrInfo", Schema = "HR")]
-    public class AcrInfo 
+    public class AcrInfo : Base
     {
-        public int id { get; set; }
-        
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
@@ -33,8 +31,5 @@ namespace HRM.Data.Entity.Employee
         public string advanceComment { get; set; }
 
         public int score { get; set; } //ConfidentialField
-
-        public string remarks { get; set; }
-
-    }
+        }
 }

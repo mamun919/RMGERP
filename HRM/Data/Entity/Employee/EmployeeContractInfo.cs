@@ -5,10 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HRM.Data.Entity.Employee
 {
     [Table("EmployeeContractInfo", Schema = "HR")]
-    public class EmployeeContractInfo
+    public class EmployeeContractInfo:Base
     {
-        public int id { get; set; }
-
         public int? employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
@@ -19,7 +17,5 @@ namespace HRM.Data.Entity.Employee
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? contractEndDate { get; set; }
-
-        public string remarks { get; set; }
     }
 }

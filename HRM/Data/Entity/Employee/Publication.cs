@@ -5,17 +5,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HRM.Data.Entity.Employee
 {
     [Table("Publication", Schema = "HR")]
-    public class Publication 
+    public class Publication : Base
     {
-        public int id { get; set; }
-
         public int employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
+        [MaxLength(100)]
         public string publicationName { get; set; }
 
+        [MaxLength(50)]
         public string publicationType { get; set; }
 
+        [MaxLength(100)]
         public string publicationPlace { get; set; }
 
         [DataType(DataType.Date)]

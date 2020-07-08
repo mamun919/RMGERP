@@ -8,10 +8,8 @@ using HRM.Data.Entity.Master;
 namespace HRM.Data.Entity.Employee
 {
     [Table("EmployeeProjectActivity", Schema = "HR")]
-    public class EmployeeProjectActivity
+    public class EmployeeProjectActivity:Base
     {
-        public int id { get; set; }
-
         public int? employeeId { get; set; }  //Fk
         public EmployeeInfo employee { get; set; }
 
