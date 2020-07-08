@@ -4,14 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("SalaryGrade", Schema = "Payroll")]
-    public class SalaryGrade
+    public class SalaryGrade : Base
     {
-        public int id { get; set; }
-
         [MaxLength(100)] 
         public string gradeName { get; set; }
 

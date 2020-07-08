@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("RelDegreeSubject", Schema = "HR")]
-    public class RelDegreeSubject
+    public class RelDegreeSubject:Base
     {
-        public int id { get; set; }
 
         public int degreeId { get; set; }
 

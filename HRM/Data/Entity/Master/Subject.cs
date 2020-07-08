@@ -1,17 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("Subject", Schema = "HR")]
-    public class Subject
+    public class Subject:Base
     {
-        public int id { get; set; }
-
-        [Required]
+        
+        [Required, MaxLength(50)]
         public string subjectName { get; set; }
+
+        [MaxLength(50)]
         public string subjectNameBn { get; set; }
 
+        [MaxLength(50)]
         public string subjectShortName { get; set; }
     }
 }

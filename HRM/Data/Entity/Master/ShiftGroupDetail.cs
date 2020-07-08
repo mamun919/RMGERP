@@ -1,18 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("ShiftGroupDetail", Schema = "HR")]
-    public class ShiftGroupDetail 
+    public class ShiftGroupDetail : Base
     {
-        public int id { get; set; }
-
-        [Required]
+      [Required, MaxLength(20)]
         public string weekDay { get; set; }
-        [Required]
+
+        [Required, MaxLength(30)]
         public string startTime { get; set; }
-        [Required]
+
+        [Required, MaxLength(30)]
         public string endTime { get; set; }
         
         public bool holiday { get; set; }

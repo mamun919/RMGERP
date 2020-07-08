@@ -1,18 +1,22 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("Result", Schema = "HR")]
-    public class Result 
+    public class Result :Base
     {
-        public int id { get; set; }
-
-        [Required]
-        public string resultName { get; set; }
-        public string resultNameBn { get; set; }
         
+        [Required, MaxLength(50)]
+        public string resultName { get; set; }
+
+        [MaxLength(50)]
+        public string resultNameBn { get; set; }
+
+        [MaxLength(50)]
         public string resultShortName { get; set; }
+
         [Required]
         public decimal resultMaxValue { get; set; }
     }

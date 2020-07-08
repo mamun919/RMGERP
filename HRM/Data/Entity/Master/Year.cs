@@ -1,13 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using HRM.Data.Entity.Employee;
 
 namespace HRM.Data.Entity.Master
 {
     [Table("Year", Schema = "HR")]
-    public class Year 
+    public class Year : Base
     {
-        public int id { get; set; }
+        [MaxLength(20)]
         public string year { get; set; }
-
-        public string remarks { get; set; }
     }
 }
