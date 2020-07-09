@@ -24,7 +24,7 @@ using RMGERP.Areas.Identity;
 #line default
 #line hidden
 #line 3 "F:\FoysalWahid@Team01\RMGERP\RMGERP\Areas\Identity\Pages\_ViewImports.cshtml"
-using RMGERP.Areas.Identity.Data;
+using RMGERP.Data;
 
 #line default
 #line hidden
@@ -39,7 +39,7 @@ using RMGERP.Areas.Identity.Pages.Account.Manage;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0723a602e84d5a261d35f2702dcc54883c69cad5", @"/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4aed7ef6cedbf09d19401f8404e27083a0166268", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"710c0fb41552bf85701adc98c685373fb8b6e5b3", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"133b9ce75c0aed537eb1c38cccb1fb1411ddb820", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5c1f62f00a3befda4cc19e4076d248fbea0b311b", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_Manage__StatusMessage : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<string>

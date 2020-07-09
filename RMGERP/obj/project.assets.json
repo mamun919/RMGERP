@@ -4615,6 +4615,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "HRM/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/HRM.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRM.dll": {}
+        }
       }
     }
   },
@@ -12611,10 +12621,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "HRM/1.0.0": {
+      "type": "project",
+      "path": "../HRM/HRM.csproj",
+      "msbuildProject": "../HRM/HRM.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "HRM >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12646,7 +12662,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\FoysalWahid@Team01\\RMGERP\\HRM\\HRM.csproj": {
+              "projectPath": "F:\\FoysalWahid@Team01\\RMGERP\\HRM\\HRM.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

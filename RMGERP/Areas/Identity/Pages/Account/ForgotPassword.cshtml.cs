@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using RMGERP.Areas.Identity.Data;
+using RMGERP.Data;
 
 namespace RMGERP.Areas.Identity.Pages.Account
 {

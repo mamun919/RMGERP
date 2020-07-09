@@ -60,3 +60,6 @@ F:\FoysalWahid@Team01\RMGERP\RMGERP\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewSta
 F:\FoysalWahid@Team01\RMGERP\RMGERP\obj\Debug\netcoreapp2.1\RMGERP.RazorTargetAssemblyInfo.cs
 F:\FoysalWahid@Team01\RMGERP\RMGERP\obj\Debug\netcoreapp2.1\RMGERP.Views.pdb
 F:\FoysalWahid@Team01\RMGERP\RMGERP\obj\Debug\netcoreapp2.1\RMGERP.csproj.CopyComplete
+F:\FoysalWahid@Team01\RMGERP\RMGERP\bin\Debug\netcoreapp2.1\appsettings.Development.json
+F:\FoysalWahid@Team01\RMGERP\RMGERP\bin\Debug\netcoreapp2.1\HRM.dll
+F:\FoysalWahid@Team01\RMGERP\RMGERP\bin\Debug\netcoreapp2.1\HRM.pdb
